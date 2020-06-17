@@ -8,12 +8,12 @@ function RenderPropsUsage({
         <Toggle onToggle={onToggle}
 
         >
-            {({ on, toggle }) => (
+            {({ on, togglerProps }) => (
                 <div>
                     {on ? 'The button is on' : 'The button is off'}
-                    <Switch on={on} onClick={toggle} />
+                    <Switch on={on} {...togglerProps} />
                     <hr />
-                    <button aria-label="custom-button" onClick={toggle}>
+                    <button aria-label="custom-button" {...togglerProps}>
                         {on ? 'on' : 'off'}
                     </button>
                 </div>

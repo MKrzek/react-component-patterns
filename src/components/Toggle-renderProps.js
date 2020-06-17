@@ -10,11 +10,21 @@ class Toggle extends React.Component {
                 this.props.onToggle(this.state.on)
             },
         )
+    getStateAndHelpers() {
+        return {
+            on: this.state.on,
+            toggle: this.toggle,
+            togglerProps: {
+                onClick: this.toggle,
+                'aria-pressed': this.state.on
+            }
+        }
+    }
 
     render() {
         const { on } = this.state
 
-        return this.props.children({ on, toggle: this.toggle })
+        return this.props.children(this.getStateAndHelpers())
     }
 }
 export default Toggle
