@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React from 'react';
 import { Switch } from "./Switch";
 const ToggleContext = React.createContext()
 
