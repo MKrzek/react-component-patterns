@@ -1,7 +1,8 @@
 import React from 'react';
 import Usage from './components/Usage(1)'
 import CompoundUsage from "./components/CompoundUsage"
-import  RenderPropsUsage from './components/RenderPropsUsage'
+import RenderPropsUsage from './components/RenderPropsUsage'
+import StateReducerUsage from "./components/StateReducerUsage"
 import './App.css';
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <div className="App">
       {/* <Usage /> */}
       {/* <CompoundUsage/> */}
-      <RenderPropsUsage/>
+      {/* <RenderPropsUsage/> */}
+      <StateReducerUsage/>
     </div>
   );
 }
