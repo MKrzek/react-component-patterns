@@ -3,24 +3,23 @@ import  Toggle  from './Toggle-controlProps';
 
 class ControlPropsUsage extends React.Component {
     state = { bothOn: false }
-    handleToggle = on => {
-
+    handleStateChange = ({ on }) => {
         this.setState({ bothOn: on })
     }
     render() {
         const { bothOn } = this.state
-        const { toggle1Ref, toggle2Ref } = this.props
+
         return (
             <div>
                 <Toggle
                     on={bothOn}
-                    onToggle={this.handleToggle}
-                    ref={toggle1Ref}
+                    onStateChange = {this.handleStateChange}
+
                 />
                 <Toggle
                     on={bothOn}
-                    onToggle={this.handleToggle}
-                    ref={toggle2Ref}
+                    onStateChange={this.handleStateChange}
+
                 />
             </div>
         )
