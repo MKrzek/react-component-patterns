@@ -5,6 +5,7 @@ import RenderPropsUsage from './components/RenderPropsUsage';
 import StateReducerUsage from "./components/StateReducerUsage";
 import ControlPropsUsage from './components/ControlPropsUsage';
 import ProviderPatternUsage from './components/ProviderPatternUsage';
+import HOCUsage from './components/HOCUsage'
 import './App.css';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       {/* <RenderPropsUsage/> */}
       {/* <StateReducerUsage/> */}
       {/* <ControlPropsUsage /> */}
-      <Usage/>
+      <HOCUsage/>
     </div>
   );
 }
